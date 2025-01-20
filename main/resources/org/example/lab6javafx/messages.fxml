@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6javafx.controller.MessageController">
+    <stylesheets>
+        <URL value="@style/chatStyle.css" />
+    </stylesheets>
+
+    <!-- Background color and padding for the entire chat window -->
+    <AnchorPane style="-fx-background-color: lightblue; -fx-padding: 20;">
+
+        <!-- VBox for aligning messages and text input vertically -->
+        <VBox spacing="10" AnchorPane.topAnchor="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+
+            <!-- Chat messages displayed in a ListView -->
+            <ListView fx:id="chatListView" prefHeight="250.0" style="-fx-border-color: lightgray; -fx-background-color: white;" />
+
+            <!-- HBox for message input and buttons -->
+            <HBox spacing="10" alignment="CENTER">
+
+                <!-- Text field for entering messages -->
+                <TextField fx:id="messageField" promptText="Enter your message..." HBox.hgrow="ALWAYS" style="-fx-font-size: 14px; -fx-background-radius: 5;" />
+
+                <!-- Send message button -->
+                <Button fx:id="btnSendMessage" text="Send" onAction="#handleUserPanelClick" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" />
+
+                <!-- Reply button -->
+                <Button fx:id="btnReplyMessage" text="Reply" onAction="#handleUserPanelClick" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" />
+
+                <!-- Back button -->
+                <Button fx:id="btnBack" text="Back" onAction="#handleUserPanelClick" style="-fx-background-color: #FF5722; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" />
+
+            </HBox>
+        </VBox>
+    </AnchorPane>
+</AnchorPane>

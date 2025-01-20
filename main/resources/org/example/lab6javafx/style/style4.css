@@ -1,0 +1,48 @@
+/* Stil principal pentru VBox */
+.mainVBox {
+    -fx-padding: 20;
+    -fx-alignment: center; /* Aliniază toate elementele pe centru */
+    -fx-background-color: #ffe4e1; /* Fundal roz deschis */
+}
+
+/* Stil pentru TextField */
+.textField {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ff1493; /* Text roz */
+    -fx-background-color: #fff0f5; /* Fundal roz pal */
+    -fx-border-color: #ff69b4; /* Contur roz închis */
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+
+/* Stil pentru TableView */
+.tableView {
+    -fx-background-color: #fff0f5; /* Fundal roz pal pentru tabel */
+    -fx-border-color: #ff69b4; /* Contur roz pentru tabel */
+    -fx-border-radius: 5px;
+    -fx-alignment: center; /* Aliniere la centru */
+    -fx-pref-width: 300px; /* Lățime fixă */
+    -fx-padding: 10px;
+}
+
+/* Stil pentru coloanele antet din tabel */
+.tableView .column-header {
+    -fx-background-color: #ff69b4; /* Fundal roz pentru antetele coloanelor */
+    -fx-text-fill: white;
+}
+
+/* Stilizare pentru butoane */
+.button {
+    -fx-background-color: #ff1493; /* Fundal roz intens */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ff69b4;
+}
+
+.button:hover {
+    -fx-background-color: #ff66b3; /* Fundal roz mai deschis când hover */
+    -fx-border-color: #ff3385; /* Contur mai deschis când hover */
+}

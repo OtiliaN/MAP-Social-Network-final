@@ -1,0 +1,22 @@
+.table-view {
+    -fx-background-color: #E1BEE7;
+    -fx-border-color: #BA68C8;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+    -fx-text-fill: #7B1FA2;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #BA68C8;
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 8 16;
+    -fx-background-radius: 20;
+}
+
+.button:hover {
+    -fx-opacity: 0.8;
+}

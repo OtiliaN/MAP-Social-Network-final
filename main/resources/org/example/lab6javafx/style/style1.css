@@ -1,0 +1,46 @@
+/* Stilizare pentru titlu */
+.title-label {
+    -fx-font-size: 28px;
+    -fx-text-fill: #8A2BE2; /* Mov */
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+}
+
+/* Stilizare pentru câmpurile de input */
+.input-field {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 14px;
+    -fx-background-color: #f5f5f5; /* Culoare de fundal */
+    -fx-border-color: #cccccc; /* Border gri */
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* Stilizare pentru butonul de Log In */
+.login-button {
+    -fx-background-color: #9370DB; /* Mov deschis */
+    -fx-text-fill: white;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 16px;
+    -fx-background-radius: 5px;
+}
+
+/* Stilizare pentru eticheta "Don't have an account?" */
+.subtext-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #666666;
+}
+
+/* Stilizare pentru hyperlink-ul de Sign Up */
+.signup-link {
+    -fx-font-size: 12px;
+    -fx-text-fill: #8A2BE2; /* Mov pentru link */
+    -fx-underline: true;
+}
+
+/* Stilizare pentru întregul VBox */
+.root {
+    -fx-background-color: #f0f0f0; /* Culoare de fundal a ferestrei */
+}

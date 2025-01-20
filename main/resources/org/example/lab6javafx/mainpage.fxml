@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="464.0" prefWidth="673.0" style="-fx-background-color: #F3E5F5;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="org.example.lab6javafx.controller.MainPageController">
+    <children>
+
+        <!-- Title -->
+        <Label alignment="CENTER" layoutX="233.0" layoutY="14.0" prefHeight="20.0" prefWidth="194.0" style="-fx-font-size: 24px; -fx-text-fill: #7B1FA2;" text="Welcome!" textAlignment="CENTER" />
+
+        <!-- Notificare pentru cereri de prietenie cu numele utilizatorului -->
+        <Label fx:id="notificationLabel" layoutX="470.0" layoutY="20.0" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #FFDAB9; -fx-text-fill: #6A1B9A; -fx-font-size: 8px; -fx-font-weight: bold; -fx-padding: 8; -fx-background-radius: 8;" text="New Friend Request" visible="false" />
+
+        <!-- Table with Friends -->
+        <TableView fx:id="friendsTable" layoutX="18.0" layoutY="81.0" prefHeight="264.0" prefWidth="498.0">
+            <columns>
+                <TableColumn fx:id="firstNameColumn" prefWidth="150" text="First Name" />
+                <TableColumn fx:id="lastNameColumn" prefWidth="150" text="Last Name" />
+                <TableColumn fx:id="usernameColumn" prefWidth="200" text="Username" />
+            </columns>
+            <stylesheets>
+                <URL value="@style/style1.css" />
+            </stylesheets>
+        </TableView>
+
+        <!-- Button Section -->
+        <HBox alignment="CENTER" layoutX="50" layoutY="290" spacing="10" />
+
+        <!-- Pagination Buttons Section -->
+        <HBox alignment="CENTER" spacing="10" layoutX="120" layoutY="355">
+            <!-- Previous Page Button -->
+            <Button fx:id="previousButton" onAction="#onBeforePage" style="-fx-background-color: transparent;">
+                <tooltip>
+                    <Tooltip text="Previous Page" />
+                </tooltip>
+                <graphic>
+                    <ImageView fitHeight="30.0" fitWidth="35.0">
+                        <image>
+                            <Image url="@icons/images.jpg" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <!-- Dynamic Region for Label Centering -->
+            <Region HBox.hgrow="ALWAYS" />
+
+            <!-- Label for displaying current page info -->
+            <Label fx:id="pagesLabel" prefHeight="35.0" style="-fx-font-size: 16px;" text="Page 1 din X"/>
+
+            <!-- Dynamic Region for Label Centering -->
+            <Region HBox.hgrow="ALWAYS" />
+
+            <!-- Next Page Button -->
+            <Button fx:id="nextButton" onAction="#onNextPage" style="-fx-background-color: transparent;">
+                <tooltip>
+                    <Tooltip text="Next Page" />
+                </tooltip>
+                <graphic>
+                    <ImageView fitHeight="30.0" fitWidth="35.0">
+                        <image>
+                            <Image url="@icons/right.jpg" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+
+        <!-- Log Out Button -->
+        <Button fx:id="logOutButton" layoutX="580.0" layoutY="413.0" onAction="#handlePanelClicks" style="-fx-background-color: #7B1FA2; -fx-text-fill: white; -fx-font-size: 14px;" text="Log Out" />
+
+        <!-- Move buttons to the right -->
+        <Button fx:id="messageButton" layoutX="570.0" layoutY="195.0" onAction="#handlePanelClicks" style="-fx-background-color: #E0F7FA; -fx-text-fill: black; -fx-font-size: 16px;" text="Messages" />
+        <Button fx:id="deleteFriendButton" layoutX="570.0" layoutY="260.0" onAction="#handlePanelClicks" style="-fx-background-color: #AB47BC; -fx-text-fill: white; -fx-font-size: 14px;" text="Delete Friend" />
+        <Button fx:id="friendRequestsButton" layoutX="570.0" layoutY="132.0" onAction="#handlePanelClicks" style="-fx-background-color: #A7F3D0; -fx-text-fill: black; -fx-font-size: 16px;" text="Friends Requests" />
+        <Button fx:id="addFriendButton" layoutX="570.0" layoutY="325.0" onAction="#handlePanelClicks" style="-fx-background-color: #CE93D8; -fx-text-fill: white; -fx-font-size: 14px;" text="Add Friend" />
+
+    </children>
+</AnchorPane>

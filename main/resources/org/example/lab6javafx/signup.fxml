@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="397.0" prefWidth="376.0" stylesheets="@style/style2.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6javafx.controller.SignUpController">
+
+    <VBox alignment="CENTER" spacing="20" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #6A0DAD;" text="Sign Up" />
+
+        <TextField fx:id="firstNameField" promptText="First Name" />
+        <TextField fx:id="lastNameField" promptText="Last Name" />
+        <TextField fx:id="usernameField" promptText="Username" />
+        <PasswordField fx:id="passwordField" promptText="Password" />
+        <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" />
+
+        <HBox alignment="CENTER" spacing="20">
+            <Button fx:id="signUpButton" onAction="#handlePanelClicks" prefHeight="7.0" prefWidth="130.0" style="-fx-background-color: #6A0DAD; -fx-text-fill: white;" text="Sign Up" />
+        </HBox>
+    </VBox>
+      <Button fx:id="cancelButton" layoutX="161.0" layoutY="348.0" onAction="#handlePanelClicks" style="-fx-background-color: #B284BE; -fx-text-fill: white;" text="Cancel" />
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #f8eafa;" stylesheets="@style/style4.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6javafx.controller.AddFriendController">
+
+    <VBox alignment="CENTER" prefHeight="450.0" prefWidth="600.0" spacing="30" styleClass="mainVBox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+        <!-- Titlu sus -->
+        <Text style="-fx-font-size: 28px; -fx-fill: #ab47bc; -fx-font-family: 'Comic Sans MS'; -fx-font-weight: bold;" text="Add New Friends" />
+
+        <!-- Tabel pentru utilizatori -->
+        <TableView fx:id="usersTable" prefHeight="300.0" prefWidth="550.0" style="-fx-background-color: #f3e5f5;" styleClass="tableView">
+            <columns>
+                <TableColumn fx:id="tblFirstName" prefWidth="170.0" style="-fx-text-fill: #9c27b0;" text="First Name" />
+                <TableColumn fx:id="tblLastName" prefWidth="210.0" style="-fx-text-fill: #9c27b0;" text="Last Name" />
+                <TableColumn fx:id="tblUsername" prefWidth="170.0" style="-fx-text-fill: #9c27b0;" text="Username" />
+            </columns>
+        </TableView>
+
+        <!-- Butoane pentru acțiuni -->
+        <HBox alignment="CENTER" spacing="30">
+            <Button fx:id="btnAddFriend" onAction="#handleAddFriend" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color: #ce93d8; -fx-text-fill: white; -fx-font-family: 'Comic Sans MS'; -fx-font-size: 14px;" text="Add Friend" />
+            <Button onAction="#handleCancel" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #e1bee7; -fx-text-fill: #6a1b9a; -fx-font-family: 'Comic Sans MS'; -fx-font-size: 14px;" text="Cancel" />
+        </HBox>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,53 @@
+/* Stilizare generală */
+.root {
+    -fx-background-color: #ffe6f2; /* Roz pal pentru fundal */
+}
+
+/* Stilizare pentru tabel */
+.table-view {
+    -fx-background-color: #ffccdf; /* Roz deschis */
+    -fx-border-color: #ff80b3; /* Roz intens */
+    -fx-border-width: 2px;
+    -fx-selection-bar: #ff66a3; /* Roz aprins pentru rândul selectat */
+    -fx-selection-bar-text: white; /* Text alb pentru rândul selectat */
+}
+
+/* Stilizare pentru rândurile tabelului */
+.table-row-cell:filled:selected {
+    -fx-background-color: #ff66a3; /* Roz aprins pentru selecție */
+    -fx-text-fill: white; /* Text alb */
+}
+
+.table-cell:selected {
+    -fx-background-color: #ff66a3; /* Roz aprins */
+    -fx-text-fill: white; /* Text alb */
+}
+
+/* Stilizare pentru coloane */
+.table-column {
+    -fx-background-color: #ffb3d9; /* Roz moale */
+    -fx-font-size: 14px;
+    -fx-text-fill: #800040; /* Mov închis pentru text */
+}
+
+/* Stilizare pentru butoane */
+.button {
+    -fx-background-color: #ff99c8; /* Roz intens */
+    -fx-text-fill: white; /* Text alb */
+    -fx-font-weight: bold;
+    -fx-border-color: #ff4da6; /* Roz puternic */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #ff80b3; /* Roz mai deschis la hover */
+    -fx-cursor: hand;
+}
+
+/* Stilizare pentru HBox */
+.hbox {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}

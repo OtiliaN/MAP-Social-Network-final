@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="386.0" prefWidth="400.0" stylesheets="@style/style1.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab6javafx.controller.LogInController">
+
+    <VBox alignment="CENTER" prefHeight="386.0" prefWidth="420.0" spacing="15">
+        <children>
+            <!-- Titlul paginii -->
+            <Label styleClass="title-label" text="Sign In" />
+
+            <!-- Câmp pentru email (username) -->
+            <TextField fx:id="usernameField" prefHeight="42.0" prefWidth="226.0" promptText="Username" styleClass="input-field" />
+
+            <!-- Câmp pentru parola -->
+            <PasswordField fx:id="passwordField" promptText="Password" styleClass="input-field" />
+
+            <!-- Butonul de Log In -->
+            <Button fx:id="loginButton" onAction="#handlePanelClicks" styleClass="login-button" text="Log In" />
+
+            <!-- Textul și link-ul pentru sign up -->
+            <Label styleClass="subtext-label" text="Don't have an account?" />
+            <Button fx:id="signUpButton" onAction="#handlePanelClicks" styleClass="signup-link" text="Sign Up!" />
+        </children>
+
+        <!-- Spatiere și margini -->
+        <padding>
+            <Insets bottom="50" left="30" right="30" top="50" />
+        </padding>
+    </VBox>
+
+</AnchorPane>
