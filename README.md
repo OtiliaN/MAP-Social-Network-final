@@ -1,0 +1,1 @@
+Project developed during the lab hours of Advanced Programming Methods. Java application built using OOP principles, based on the concept of a social media app. Data persistence is handled with a PostgreSQL database, and the intuitive graphical interface is created using JavaFX
